@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Cyber Profile | M. Khaerul Azzam</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Sistem Anti-Salin Global (Memblokir seleksi teks & menu tekan lama di iOS/Android) */
+        * { 
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background: #020617; 
+            background-image: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #020617 70%);
+            background-attachment: fixed;
+            touch-action: none; /* Memblokir gesture zoom bawaan browser */
+            transition: filter 0.2s ease; /* Efek transisi halus saat layar nge-blur */
+        }
+
+        .cyber-card { 
+            background: rgba(10, 10, 15, 0.8); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(0, 240, 255, 0.2); 
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 240, 255, 0.1);
+        }
+
+        .neon-text { text-shadow: 0 0 10px rgba(0, 240, 255, 0.6); }
+        
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.4); }
+            70% { box-shadow: 0 0 0 6px rgba(0, 255, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0); }
+        }
+
+        .mod-item-list:hover {
+            background: rgba(0, 240, 255, 0.05);
+            border-color: rgba(0, 240, 255, 0.3);
+            transform: translateX(4px);
+        }
+
+        /* Anti-Screenshot via cetak dokumen (Sembunyikan konten jika diprint ke PDF) */
+        @media print {
+            body { display: none !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="cyber-card max-w-sm w-full rounded-[2rem] p-6 relative overflow-hidden transition-all duration-500">
+        
+        <div class="text-center">
+            <div class="relative inline-block group">
+                <div class="absolute inset-0 bg-cyan-500 rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <img src="foto.jpg" alt="Azzam" class="w-24 h-24 rounded-full border-2 border-cyan-400 relative shadow-2xl object-cover aspect-square" onerror="this.src='https://ui-avatars.com/api/?name=MK&background=00f0ff&color=000'">
+            </div>
+            <h1 class="text-xl font-black text-white mt-4 uppercase tracking-tight">Azzam</h1>
+            <div class="text-[10px] text-cyan-400 font-bold tracking-[0.3em] mt-1 uppercase neon-text">Patcher // System Mod</div>
+        </div>
+
+        <div class="mt-6">
+            <div class="text-[9px] text-purple-400 font-bold tracking-[0.3em] uppercase mb-3 opacity-70">Active_Patch_Modules</div>
+            <div class="space-y-2 max-h-[290px] overflow-y-auto pr-1 custom-scrollbar">
+                
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-shield-halved w-5 text-cyan-400"></i>SCREENSHOT BYPASS</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+                
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-layer-group w-5 text-cyan-400"></i>FLOATING APP SYSTEM</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+                
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-thumbtack w-5 text-cyan-400"></i>UNPIN & PIN APP CONTROL</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+                
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-brands fa-google w-5 text-cyan-400"></i>AUTO SAVE GOOGLE</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-copy w-5 text-cyan-400"></i>SALIN TEKS SYSTEM</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-ghost w-5 text-cyan-400"></i>STEALTH EXIT (NO LOG)</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+
+                <div class="mod-item-list p-3 rounded-xl border border-white/5 bg-white/[0.02] flex justify-between items-center transition-all duration-300">
+                    <span class="text-[11px] font-semibold text-slate-200 flex items-center"><i class="fa-solid fa-ban w-5 text-cyan-400"></i>REMOVE PINALTY FEATURE</span>
+                    <span class="status-pulse text-[8px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-bold">ACTIVE</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mt-6">
+            <a href="https://instagram.com/mhmmdkhrulazzam" class="bg-black/40 border border-cyan-500/30 hover:border-cyan-400 hover:bg-cyan-500/10 py-2.5 rounded-xl text-center transition-all duration-300">
+                <i class="fa-brands fa-instagram text-cyan-400 mb-0.5 block text-sm"></i>
+                <div class="text-[9px] text-cyan-200 uppercase font-bold tracking-wider">Instagram</div>
+            </a>
+            <a href="https://tiktok.com/@mhmmdkhrullazzam" class="bg-black/40 border border-purple-500/30 hover:border-purple-400 hover:bg-purple-500/10 py-2.5 rounded-xl text-center transition-all duration-300">
+                <i class="fa-brands fa-tiktok text-purple-400 mb-0.5 block text-sm"></i>
+                <div class="text-[9px] text-purple-200 uppercase font-bold tracking-wider">Tiktok</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 1. BLOKIR KLIK KANAN, COPY, CUT, & SELEKSI DATA
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('copy', e => e.preventDefault());
+        document.addEventListener('cut', e => e.preventDefault());
+        document.addEventListener('selectstart', e => e.preventDefault());
+
+        // 2. BLOKIR SHORTCUT KEYBOARD (DevTools, Save, Print, & Keys Screenshot)
+        document.addEventListener('keydown', (e) => {
+            if (
+                (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'i' || e.key === 'p')) ||
+                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+                e.key === 'F12' || 
+                e.key === 'PrintScreen'
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // 3. BLOKIR PINCH TO ZOOM (Mobile)
+        document.addEventListener('touchmove', function (e) {
+            if (e.scale !== undefined && e.scale !== 1) { 
+                e.preventDefault(); 
+            }
+        }, { passive: false });
+
+        // 4. BLOKIR SCROLL MOUSE + CTRL (Desktop Zoom)
+        document.addEventListener('wheel', function (e) {
+            if (e.ctrlKey) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+
+        // 5. TRICK ANTI-SCREENSHOT BACKGROUND (Otomatis blur total saat membuka panel notifikasi/pindah aplikasi)
+        window.addEventListener('blur', () => {
+            document.body.style.filter = 'blur(25px)';
+        });
+        window.addEventListener('focus', () => {
+            document.body.style.filter = 'none';
+        });
+    </script>
+</body>
+</html>
