@@ -1,2 +1,0 @@
-# Azzam-About
-ya
